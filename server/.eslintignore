@@ -1,0 +1,5 @@
+/test/mocks/
+/dist
+.eslintrc.js
+package.json
+.npmrc
