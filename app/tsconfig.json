@@ -29,5 +29,6 @@
     },
   },
   "include": ["./src"],
+  "exclude": ["cypress", "node_modules", "cypress.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

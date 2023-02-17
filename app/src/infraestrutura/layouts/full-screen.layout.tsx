@@ -1,4 +1,4 @@
-import { BackTop } from 'antd';
+import { FloatButton } from 'antd';
 import { Layout } from 'antd';
 import { FC, ReactNode } from 'react';
 const { Content } = Layout;
@@ -25,7 +25,7 @@ export const FullScreenLayout: FC<FullScreenLayoutProps> = ({ children }) => {
             {/* <div className='site-layout-background'>{children}</div> */}
             {children}
           </Content>
-          <BackTop />
+          <FloatButton.BackTop />
         </Layout>
       </Layout>
     </Layout>

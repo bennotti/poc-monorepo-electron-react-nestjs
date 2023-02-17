@@ -1,4 +1,3 @@
-import 'antd/dist/antd.css';
 import '@app/assets/css/antd.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -16,7 +15,7 @@ import reportWebVitals from './report-web-vitals';
 async function checkAndStartMock() {
   if (env.IS_MOCK && env.IS_WEB) {
     const { createWorker } = await import('@infra/mock/browser');
-    const { handlers } = await import('funcionalidades/handlers');
+    const { handlers } = await import('@funcionalidades/handlers');
     const worker = createWorker(handlers);
     return worker.start({
       onUnhandledRequest: 'bypass',

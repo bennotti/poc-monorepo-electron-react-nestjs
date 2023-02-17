@@ -8,7 +8,7 @@ export const TarefaScreen: FC = () => {
   return (
     <>
       <Row gutter={16} justify='center' align='top' style={{ marginBottom: 10 }} className='site-layout-background'>
-        <Col span={24} className='site-layout-background' style={{ paddingBottom: 20, paddingLeft: 30, paddingRight: 30 }}>
+        <Col span={24} className='coluna-tarefa site-layout-background' style={{ paddingBottom: 20, paddingLeft: 30, paddingRight: 30 }}>
           Tarefa
         </Col>
       </Row>

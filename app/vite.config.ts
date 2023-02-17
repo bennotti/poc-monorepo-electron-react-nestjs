@@ -12,7 +12,8 @@ export const plugins = [
   react(),
   VitePluginHtmlEnv(),
   loadVersion(),
-  EnvironmentPlugin("all"),
+  EnvironmentPlugin('all', { prefix: 'REACT_APP_' }),
+  EnvironmentPlugin('all', { prefix: 'VITE_APP_' })
 ];
 
 const build = {
@@ -40,7 +41,7 @@ export default defineConfig(({ command, mode }) => {
   if (command == 'serve') {
     return {
       server: {
-        open: '/',
+        open: mode !== 'webmocke2e' ? '/' : undefined,
         disableHostCheck: true,
         hot: true,
       },
